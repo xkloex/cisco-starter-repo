@@ -1,0 +1,235 @@
+Last login: Tue Jul  5 21:53:20 on ttys001
+xkloex@Chloes-MacBook-Air ~ % git clone https://github.com/xkloex/cisco-starter-repo.git
+fatal: destination path 'cisco-starter-repo' already exists and is not an empty directory.
+xkloex@Chloes-MacBook-Air ~ % cd cisco-starter-repo
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   README
+	modified:   pylon/package-lock.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git rm README
+error: the following file has changes staged in the index:
+    README
+(use --cached to keep the file, or -f to force removal)
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git rm -f README
+rm 'README'
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   pylon/package-lock.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % echo 'cisco-starter-repo' > .gitignore
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   pylon/package-lock.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git add .gitignore 
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	modified:   pylon/package-lock.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % echo 'cisco-starter-repo' > README.md
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	modified:   pylon/package-lock.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git add README.md
+xkloex@Chloes-MacBook-Air cisco-starter-repo % goit status
+zsh: command not found: goit
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	modified:   README.md
+	modified:   pylon/package-lock.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % echo 'cisco-starter-repo' > pylon/package.json
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	modified:   README.md
+	modified:   pylon/package-lock.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   pylon/package.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git add pylon/package.json
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	modified:   README.md
+	modified:   pylon/package-lock.json
+	modified:   pylon/package.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % echo 'cisco-starter-repo' > pylon/server.js
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	modified:   README.md
+	modified:   pylon/package-lock.json
+	modified:   pylon/package.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   pylon/server.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git add pylon/server.js
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	modified:   README.md
+	modified:   pylon/package-lock.json
+	modified:   pylon/package.json
+	modified:   pylon/server.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	...
+
+xkloex@Chloes-MacBook-Air cisco-starter-repo % git commit
+hint: Waiting for your editor to close the file... 
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#       modified:   .gitignore
+#       modified:   README.md
+#       modified:   pylon/package-lock.json
+#       modified:   pylon/package.json
+#       modified:   pylon/server.js
+#
+# Untracked files:
+#       ...
+#
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+~                                                                                                                                                                                    
+"~/cisco-starter-repo/.git/COMMIT_EDITMSG" 17L, 411B
